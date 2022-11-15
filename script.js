@@ -32,9 +32,7 @@ container.appendChild(orderedList);
 
 for(let i =0; i<expenses.length; i++){
     let newListElement = document.createElement("li")
-    let divForElementText = document.createElement("div");//aggiunto per css
-    divForElementText.textContent = `${i+1}. ${expenses[i]}`; //aggiunto per css 
-    newListElement.appendChild(divForElementText);
+    newListElement.textContent = expenses[i];
     orderedList.appendChild(newListElement);
 
     //&SUPER BONUS: aggiungere anche bottone di rimozione dell'elemento
@@ -57,9 +55,7 @@ button.addEventListener("click", () => {
     expenses.push(inputForListItemValue);
 
     let newListElement = document.createElement("li");
-    let divForElementText = document.createElement("div");//aggiunto per css
-    divForElementText.textContent = `${++i}. ${inputForListItemValue}`;
-    newListElement.appendChild(divForElementText);
+    newListElement.textContent = `${inputForListItemValue}`;
     orderedList.appendChild(newListElement);
 
     //&questa parte è per SUPER BONUS per aggiungere anche bottone di rimozione - quando aggiunge elemento nella lista :
