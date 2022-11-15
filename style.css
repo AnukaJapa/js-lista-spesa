@@ -9,7 +9,7 @@ body {
     font-size:20px;
     background-color: rgba(255, 127, 80, 0.498);
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .inputForListItemDiv {
@@ -20,15 +20,17 @@ body {
     width:60%;
     min-width:300px;
     max-width:600px;
-    height:20vh;
-    margin:6vh auto;
+    max-height:300px;
+    margin:5vh auto;
     background-color: rgba(248, 244, 243, 0.295);
-    padding:10px;
+    padding:20px;
 
 
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #inputForListItem {
@@ -52,7 +54,7 @@ margin-left:10px;
 
 .container {
     width:50%;
-    margin:0 auto;
+    margin:3vh auto;
 }
 
 ol {
