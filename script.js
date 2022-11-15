@@ -58,7 +58,7 @@ button.addEventListener("click", () => {
     newListElement.textContent = inputForListItemValue;
     orderedList.appendChild(newListElement);
 
-    //&questa parte è per SUPER BONUS per aggiungere anche bottone di rimozione - quando aggiunge elemento nella lista :
+    //&questa parte è per SUPER BONUS per aggiungere anche bottone di rimozione - quando aggiunge elemento nella lista:
     let newButton = document.createElement("button");
     newButton.textContent="-";
     newListElement.appendChild(newButton);
