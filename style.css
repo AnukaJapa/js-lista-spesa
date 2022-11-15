@@ -54,7 +54,7 @@ background-color: rgba(250, 235, 215, 0.155);
 }
 
 .container {
-    width:60%;
+    width:100%;
     margin:3vh auto;
 
     display:flex;
@@ -63,6 +63,7 @@ background-color: rgba(250, 235, 215, 0.155);
 
 ol {
 margin:0 auto;
+width:20%;
 }
 
 li {
@@ -70,10 +71,11 @@ list-style-type: decimal;
 list-style-position: inside;
 margin:5px;
 position:relative;
+
 }
 
 li button {
     position:absolute;
-    right:-80%;
+    right:0;
 }
  
