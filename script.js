@@ -23,3 +23,16 @@ while(i<expenses.length){
 console.log(expenses[i]);
 i++
 }
+
+//*stampare gli elementi della lista in html, utilizzando uno dei cicli (for o while loop)
+
+let container = document.querySelector(".container");
+
+let orderedList = document.createElement("ol");
+container.appendChild(orderedList);
+
+for(let i =0; i<expenses.length; i++){
+    let newListElement = document.createElement("li")
+    newListElement.textContent = expenses[i];
+    orderedList.appendChild(newListElement);
+}
