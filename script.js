@@ -36,3 +36,20 @@ for(let i =0; i<expenses.length; i++){
     newListElement.textContent = expenses[i];
     orderedList.appendChild(newListElement);
 }
+
+//* BONUS: aggiungere alla pagina un campo di input testuale e un pulsante “aggiungi”: l’utente inserisce nell’input un prodotto da acquistare e quando clicca sul pulsante, il testo viene aggiunto alla lista.
+let button = document.getElementById("addExpensesButton");
+button.addEventListener("click", ()=>{
+
+    let inputListItem = document.getElementById("inputListItem");
+    let inputListItemValue = inputListItem.value;
+
+    
+    expenses.push(inputListItemValue);
+    let newListElement = document.createElement("li");
+    newListElement.textContent = inputListItemValue;
+    orderedList.appendChild(newListElement);
+})
+
+
+
