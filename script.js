@@ -55,7 +55,7 @@ button.addEventListener("click", () => {
     expenses.push(inputForListItemValue);
 
     let newListElement = document.createElement("li");
-    newListElement.textContent = `${inputForListItemValue}`;
+    newListElement.textContent = inputForListItemValue;
     orderedList.appendChild(newListElement);
 
     //&questa parte è per SUPER BONUS per aggiungere anche bottone di rimozione - quando aggiunge elemento nella lista :
