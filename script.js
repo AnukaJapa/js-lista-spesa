@@ -37,10 +37,15 @@ for(let i =0; i<expenses.length; i++){
 
     //&SUPER BONUS: aggiungere anche bottone di rimozione dell'elemento
     let newButton = document.createElement("button");
-    newButton.textContent="-";
+    newButton.textContent= "-";
     newListElement.appendChild(newButton);
     
-    newButton.addEventListener("click", ()=> {
+    newButton.addEventListener("click", () => { 
+        let index = Array.from(newListElement.parentNode.children).indexOf(newListElement);
+
+        console.log(index);
+        expenses.splice(index, 1);
+        console.log(expenses);
         newListElement.remove();
     })
 }
@@ -63,8 +68,15 @@ button.addEventListener("click", () => {
     newButton.textContent="-";
     newListElement.appendChild(newButton);
     newButton.addEventListener("click", ()=> {
+        
+        let index = Array.from(newListElement.parentNode.children).indexOf(newListElement);
+        console.log(index);
+        expenses.splice(index, 1);
+        console.log(expenses);
+
         newListElement.remove();
             });
+
 })
 
 
