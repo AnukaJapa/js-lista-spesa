@@ -58,6 +58,7 @@ button.addEventListener("click", () => {
     let inputForListItemValue = inputForListItem.value;
 //aggiunti all'array della lista questo elemento aggiunto da input
     expenses.push(inputForListItemValue);
+    console.log(expenses);
 
     let newListElement = document.createElement("li");
     newListElement.textContent = inputForListItemValue;
@@ -68,7 +69,7 @@ button.addEventListener("click", () => {
     newButton.textContent="-";
     newListElement.appendChild(newButton);
     newButton.addEventListener("click", ()=> {
-        
+
         let index = Array.from(newListElement.parentNode.children).indexOf(newListElement);
         console.log(index);
         expenses.splice(index, 1);
